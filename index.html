@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<!--
+	Graphic Template by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	-->
+<html>
+	<style type="text/css">
+		a.hovertext {
+		position: relative;
+		text-decoration: none !important;
+		text-align: center;
+		}
+		a.hovertext:after {
+		content: attr(addtitle);
+		position: relative;
+		text-align: center;
+		padding: 0.5em 20px;
+		background: rgba(0,0,0,0.8);
+		text-decoration: none !important;
+		color: #fff;
+		opacity: 0;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+		}
+		a.hovertext:hover:after, a.hovertext:focus:after {
+		opacity: 1.0;
+		}
+		article.full {
+		display: none;
+		}
+			div.full {
+		display: none;
+		}
+
+	</style>
+	<head>
+		<title>Mirko Ferrati HomePage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="assets/css/showYtVideo.css" rel="stylesheet" type="text/css">
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Mirko Ferrati</a></h1>
+					<p>Roboticist, Programmer, Software Architect with a passion for Planning and Mobile Robots</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Core Skills</a></li>
+						<li><a href="#three">Projects</a></li>
+						<li><a href="MirkoFerratiCV.pdf" download="MirkoFerratiCV.pdf" target="_blank"><span class="fa fa-download">&nbsp; Download CV</a></li>
+					</ul>
+				</nav>
+				<footer id="footer_contacts">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/mirkoferrati" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/mirkoferrati" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://bitbucket.org/mferrati" class="icon fa-bitbucket"><span class="label">BitBucket</span></a></li>
+						<li><a href="mailto:mirkoferrati@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Personal Page</h2>
+									</header>
+									<p>
+									After getting my Master Degree in Robotics and Automation (2012) with
+									a background in computer
+									science (Bachelor, 2009), I worked for a B2B company developing
+									financial applications as cloud service
+									, with a focus on robustness and reliability of the software.
+									<br>In 2016 I got my PhD in robotics, focused on
+									planning and control algorithms for humanoid and mobile robots.<br>
+									In the teams I have worked with, I usually handle the complexity of the design
+									and management of the software architecture and API.
+									I like to take part in robotics competitions and to develop industrial applications,
+									because that's where the difference between a demo and a working product becomes evident.
+									</p>
+									<br/>
+									<p>
+									Check the right menu for my contacts.
+									</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Things I Can Do</h3>
+									<p>I have been learning advanced topics about robotics and planning, but
+									my background remains computer engineering and software architecture.
+									</p>
+									<ul class="feature-icons">
+										<li class="fa-keyboard-o ">C++</li>
+										<li class="fa-keyboard-o ">ROS/YARP</li>
+										<li class="fa-cogs">Kinematics/Dynamic Control</li>
+										<li class="fa-car">Mobile Robotics</li>
+										<li class="fa-child">Humanoid Robotics</li>
+										<li class="fa-cubes">Software Architectures</li>
+										<li class="fa-users">Multi-Robot Planning</li>
+										<a href="MirkoFerratiCV.pdf" style="border-bottom-style:none" target="_blank"><li class="fa-download">Check my CV for a complete list</li></a>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Things I have done</h3>
+									<p>
+									Either in a large team or alone, playing with robots is always fun.
+									This is a short list of projects I enjoyed since my first robot in 2009, a P3AT.
+									</p>
+									<div class="features"	id="snippets">
+										<article>
+											<h4>Darpa Robotics Challenge - Walkman Team</h4>
+											<div class="short" data-id="1">
+												<a href="javascript:void(0);" data-id="1" class="image openpost">
+													<img src="images/team.jpg" alt="" /> More +
+												</a>
+												<div class="inner">
+													<p> I had the pleasure to co-design and manage the development
+														of the software running on the Walk-Man robot, during the DRC.
+													</p>
+												</div>
+											</div>
+											<div class="full" data-id="1">
+												<a href="javascript:void(0);" data-id="1" class="image backtoblog">
+													<img src="images/team.jpg" alt="">
+													Less -
+												</a>
+												<p><h5>Humanoid Software Architecture</h5>
+													I designed most of the software architecture used to control and teleoperate Walk-Man robot.
+													The architecture included multiple operator and on-board computers, along with tens of distributed
+													process interconnected by two different communication middlewares: one for high-frequency control
+													on the robot, and one for low-frequency teleoperation and visualization by the human operators.
+													Such processes were developed by a team of more than ten robotics researchers and engineers,
+													in a common framework with multiple shared libraries and utilities.
+												</p>
+												<p><h5>Network Management</h5>
+													I developed the robust networking software used to move information between the pilots and the robot.
+													The network setup between operators and the robot consisted of a wireless link and an
+													artificially degraded wired connection. Robot and operators computers were asyncronously connected by a
+													set of channels dedicated to different prioritized information; the networking software was designed
+													to survive blackouts longer than 60 seconds without affecting any running process on any computer
+													 and automatically reconnect all of them once the connection was available again.
+												</p>
+												<p><h5>Operator GUI</h5>
+													I co-developed part of the operator interface used to teleoperate the Walk-Man robot.
+													The interface uses Qt widgets along with robotics middlewares (YARP,ROS) in order to provide
+													a dynamic and customizable operator window. Customization is based on XML files read during launch,
+													and different operators use a different set of widgets. By using the loosely coupled inter-process
+													structure of the software architecture, multiple operators can have the same widgets on their own
+													computer without affecting each other.
+												</p>
+												<!-- TODO:  -->
+												<!--
+												<p>Control Tasks
+												</p>
+												<p>
+											</p>-->
+											</div>
+											<a href="http://journal.frontiersin.org/article/10.3389/frobt.2016.00025/full" target="_blank" >Open access paper</a>
+										</article>
+										<article>
+											<h4>Distributed Coordinated Planner for Warehouse Mobile Robots
+												<a href="http://distributedplanning.bitbucket.org" target="_blank" class="icon fa-bitbucket">
+													<span class="label">Code repo</span>
+												</a>
+											</h4>
+											<div class="short" data-id="2">
+												<a href="javascript:void(0);" data-id="2" class="image openpost">
+													<img src="images/roombagraph.png" alt=""></img> More +
+												</a>
+												<div class="inner">
+												<p> I have been working with coordination algorithms in a decentralized multi-robot environment.
+												</p>
+												</div>
+											</div>
+											<div class="full" data-id="2">
+												<a href="javascript:void(0);" data-id="2" class="image backtoblog">
+													<img src="images/roombagraph.png" alt=""></img>Less -
+												</a>
+												<p>
+												I believe that exchange of information and speed management are the key points for energy efficient
+												traffic management. A time-space planner can provide both collision avoidance and speed control, while
+												avoiding abrupt stops and acceleration. I designed two versions of a time-space planner, respectively
+												in a discrete or continuous environment.</p>
+												<h5>Discrete Search</h5>
+												<p>
+												The first algorithm is based on a modified graph representation of the space-time where
+												the robotic vehicles operate. The proposed graph representation augments standard
+												path planning strategies by allowing multiple speeds. Robots can make and exchange
+												accurate predictions on their planned routes and speeds, so as to prevent and solve
+												possible collisions. Indeed, the algorithm is formally proved to provide collision free paths. </p>
+												<h5>Continuous Sampling</h5>
+												<p>
+												In the second version, a sample based approach in a discrete state and continuous time space
+												is used for the trajectory computation of a single robot.
+												The procedure is thus extended, based on a local robot information exchange,
+												to the computation of collision free trajectories of multi-robot systems.
+												</p>
+											</div>
+
+										</article>
+										<article>
+											<h4>Multiple robotics arm planning for object moving
+												<a href="http://dualmanipulation.bitbucket.org/" target="_blank" class="icon fa-bitbucket">
+													<span class="label">Code repo</span>
+												</a>
+											</h4>
+											<div class="short" data-id="6">
+												<a href="javascript:void(0);" data-id="6" class="image openpost">
+													<img src="images/kuka.png" alt="" /> More +
+												</a>
+												<div class="inner">
+												<p> Planning for multiple arms and robots movements with a graph-based search considering their grasps and kinematics capabilities.
+												</p>
+												</div>
+											</div>
+											<div class="full" data-id="6">
+												<a href="javascript:void(0);" data-id="6" class="image backtoblog">
+													<img src="images/kuka.png" alt=""></img>Less -
+												</a>
+												<p>Moving objects with autonomous robots is a wide topic that includes single-arm pick-and-place tasks,
+												object regrasping, object passing between two or more arms in the air or using support surfaces such as
+												tables and similar. I developed a planning scheme which, based on the use of pre-defined elementary
+												manipulation skills, aims to unify solutions which are usually obtained by means of different planning
+												strategies rooted on hard-coded behaviors.<br/>
+												Both robotic manipulators and environment fixed support surfaces are treated as end-effectors
+												of movable and non-movable types, respectively. The task of the robot can thus be broken down
+												into elementary building blocks, which are end-effector manipulation skills, that are then
+												planned at the kinematic level. Feasibility is ensured by propagating unforeseen low-level
+												failures at the higher level and by synthesizing different behaviors.
+												Finally, a time varying graph is build in order to handle multiple objects in dynamic chains of robots.
+												</p>
+											</div>
+											<a class="show-modal" videoId="vIHg6gzIemQ" "https://www.youtube.com/watch?v=vIHg6gzIemQ">Show video with multiple arms</a>
+											<br>
+											<a class="show-modal" videoId="vq10SvHYzsk" "https://www.youtube.com/watch?v=vq10SvHYzsk">Show video with arms and mobile robots</a>
+										</article>
+
+										<article>
+											<h4>Footstep planning for Humanoid Robots
+												<a href="https://github.com/CentroEPiaggio/footstep_planner" target="_blank" class="icon fa-github">
+													<span class="label">Code repo</span>
+												</a>
+										</h4>
+											<div class="short" data-id="3">
+												<a href="javascript:void(0);" data-id="3" class="image openpost">
+													<img src="images/walkmancorridor.png" alt=""></img> More +
+												</a>
+												<div class="inner">
+													<p> Online planner for footsteps of a humanoid robot walking on irregular terrain.
+													</p>
+												</div>
+											</div>
+											<div class="full" data-id="3">
+												<a href="javascript:void(0);" data-id="3" class="image backtoblog">
+													<img src="images/walkmancorridor.png" alt=""></img> Less -
+												</a>
+												<p>I developed an online planner that computes the necessary steps to be followed by a humanoid robot,
+												with arbitrary kinematic structure, to reach a desired position based on the scene captured as a point cloud.
+												The proposed method provides a sequence of feasible footsteps
+												in terms of kinematic reachability and stability according to a desired direction of motion.
+												The best footstep among all possible solutions resulting from the procedure is thus
+												selected. The approach has been tested on the COMAN
+												and Walk-Man humanoid robots in different scenarios including stairs and uneven terrains.
+												</p>
+											</div>
+										</article>
+
+										<!--article>
+											<h4>Time-space discrete planning for multi-agent systems</h4>
+											<div class="short" data-id="5">
+												<a href="javascript:void(0);" data-id="5" class="image openpost">
+													<img src="images/ten.png" alt="" /> More +
+												</a>
+												<div class="inner">
+													<p> TODO small introduction
+													</p>
+												</div>
+											</div>
+											<div class="full" data-id="5">
+												<a href="javascript:void(0);" data-id="5" class="image backtoblog">
+													<img src="images/ten.png" alt=""></img>Less -
+												</a>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</p>
+											</div>
+										</article-->
+										<article>
+											<h4>Autonomous exploration with reactive behaviors</h4>
+											<div class="short" data-id="4">
+												<a href="javascript:void(0);" data-id="4" class="image openpost">
+													<img src="images/pioneer.jpg" alt=""></img> More +
+												</a>
+												<div class="inner">
+												<p> My first experience with a robot (good old P3AT)! Laser and vision based
+													reactive navigation that avoids obstacles and heads to a goal.
+												</p>
+												</div>
+											</div>
+											<div class="full" data-id="4">
+												<a href="javascript:void(0);" data-id="4" class="image backtoblog">
+													<img src="images/pioneer.jpg" alt=""></img>Less -
+												</a>
+												<p>
+												As a part of my bachelor thesis, I partecipated at the robotour2009 competition.
+												My work was focused on a local planner based on a reactive set of behaviors, coordinated
+												by time-varying weights depending on the perceived environment. A laser sensor and a webcam
+												provided the necessary perception about road limits and obstacles.
+											</p>
+											</div>
+											<a class="show-modal" videoId="xrLirflCPus" "https://www.youtube.com/watch?v=xrLirflCPus" >Show outdoor video</a>
+											<br>
+											<a class="show-modal" videoId="57TKmCoCYWc" "https://www.youtube.com/watch?v=57TKmCoCYWc" >Show indoor video</a>
+										</article>
+										<!-- End Article -->
+
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+						<section id="four">
+							<div id="footer_container" class="container">
+								<h3>Contacts</h3>
+							</div>
+							<script>
+								var elmnt = document.getElementById("footer_contacts");
+								var cln = elmnt.cloneNode(true);
+								document.getElementById("footer_container").appendChild(cln);
+							</script>
+						</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Mirko Ferrati. All rights reserved.</li>
+								<li>Design inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<!-- <script src="assets/js/jquery.mobile.min.js"></script> -->
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.jscroll.js"></script>
+			<script src="assets/js/jquery.showYtVideo.js"></script>
+			<script src="assets/js/util.js"></script>
+	</body>
+</html>
