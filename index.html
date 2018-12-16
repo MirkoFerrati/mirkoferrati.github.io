@@ -50,15 +50,20 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<span class="image avatar">
+						<picture>
+						  <source media="(min-width: 400px)" srcset="images/hires/avatar.jpg">
+						  <img src="images/avatar.jpg" alt="avatar">
+						</picture>
+					</span>
 					<h1 id="logo"><a href="#">Mirko Ferrati</a></h1>
 					<p>Roboticist, Programmer, Software Architect with a passion for Planning and Mobile Robots</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Core Skills</a></li>
-						<li><a href="#three">Projects</a></li>
+						<li><a href="#about" class="active">About</a></li>
+						<li><a href="#skills">Core Skills</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li><a href="MirkoFerratiCV.pdf" download="MirkoFerratiCV.pdf" target="_blank">
 							<span class="icon fa-download"/>&nbsp; Download CV
 						</a></li>
@@ -81,7 +86,7 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="one">
+							<section id="about">
 								<div class="container">
 									<header class="major">
 										<h2>Personal Page</h2>
@@ -107,7 +112,7 @@
 							</section>
 
 						<!-- Two -->
-							<section id="two">
+							<section id="skills">
 								<div class="container">
 									<h3>Things I Can Do</h3>
 									<p>I have been learning advanced topics about robotics and planning, but
@@ -127,7 +132,7 @@
 							</section>
 
 						<!-- Three -->
-							<section id="three">
+							<section id="projects">
 								<div class="container">
 									<h3>Things I have done</h3>
 									<p>
@@ -135,10 +140,49 @@
 									This is a short list of projects I enjoyed since my first robot in 2009, a P3AT.
 									</p>
 									<div class="features"	id="snippets">
-										<article>
+										<article id="magazino">
+											<h4>Magazino GmbH</h4>
+											<div class="short" data-id="magazino">
+												<a href="javascript:void(0);" data-id="magazino" class="image openpost">
+													<img src="images/team.jpg" alt="" /> More +
+												</a>
+												<div class="inner">
+													<p> From electronics software integration to leading the automated navigation team,
+														 I helped turning this large robot from a prototype to a product deployed in multiple warehouses.
+													</p>
+												</div>
+											</div>
+											<div class="full" data-id="magazino">
+												<a href="javascript:void(0);" data-id="magazino" class="image backtoblog">
+													<img src="images/team.jpg" alt="">
+													Less -
+												</a>
+												<p><h5>Team leader autonomated navigation</h5>
+													I lead 5 full-time software developers and created the team responsible for autonomous navigation,
+													 localization and mapping. I introduced daily statistics for measuring the performances of
+													 the robots along software releases, achieved the adoption of pull-request workflow with code reviews
+													 in the entire software department and coordinated the effort and goals with the other
+													 software team leaders in the company.
+												</p>
+												<p><h5>Software and motion controllers</h5>
+													I developed the software responsible for communication and control of motors and sensors over the canopen
+													protocol. The main focus was on robustness and error handling because the entire robot movements used this sub-system.
+													The software reliability reached 99.9% of uptime with no human intervention required.
+													I developed a differential drive controller that supports speed/acceleration saturation and safety constraints with Magazino
+													custom-built drive base. The controller is used in all the different types of robots.
+												</p>
+												<p><h5>Embedded Firmware</h5>
+													Designed the requirements and the architecture for the real-time
+													firmware running on Arm Cortex M3. Tutored two students on how to
+													develop and use the firmware.
+												</p>
+											</div>
+											<a class="show-modal" videoId="Kwa-0jVcKsE" "https://www.youtube.com/watch?v=Kwa-0jVcKsE">Show video of Toru grasping boxes</a>
+										</article>
+										<article id = "darpa">
 											<h4>Darpa Robotics Challenge - Walkman Team</h4>
-											<div class="short" data-id="1">
-												<a href="javascript:void(0);" data-id="1" class="image openpost">
+											<div class="short" data-id="darpa">
+												<a href="javascript:void(0);" data-id="darpa" class="image openpost">
 													<img src="images/team.jpg" alt="" /> More +
 												</a>
 												<div class="inner">
@@ -147,8 +191,8 @@
 													</p>
 												</div>
 											</div>
-											<div class="full" data-id="1">
-												<a href="javascript:void(0);" data-id="1" class="image backtoblog">
+											<div class="full" data-id="darpa">
+												<a href="javascript:void(0);" data-id="darpa" class="image backtoblog">
 													<img src="images/team.jpg" alt="">
 													Less -
 												</a>
@@ -187,14 +231,14 @@
 											<br/>
 											<a href="http://journal.frontiersin.org/article/10.3389/frobt.2016.00025/full" target="_blank" >Open access paper</a>
 										</article>
-										<article>
+										<article id="planner">
 											<h4>Distributed Coordinated Planner for Warehouse Mobile Robots
 												<a href="http://distributedplanning.bitbucket.org" target="_blank" class="icon fa-bitbucket">
 													<span class="label">Code repo</span>
 												</a>
 											</h4>
-											<div class="short" data-id="2">
-												<a href="javascript:void(0);" data-id="2" class="image openpost">
+											<div class="short" data-id="planner">
+												<a href="javascript:void(0);" data-id="planner" class="image openpost">
 													<img src="images/roombagraph.png" alt=""></img> More +
 												</a>
 												<div class="inner">
@@ -202,8 +246,8 @@
 												</p>
 												</div>
 											</div>
-											<div class="full" data-id="2">
-												<a href="javascript:void(0);" data-id="2" class="image backtoblog">
+											<div class="full" data-id="planner">
+												<a href="javascript:void(0);" data-id="planner" class="image backtoblog">
 													<img src="images/roombagraph.png" alt=""></img>Less -
 												</a>
 												<p>
@@ -228,14 +272,14 @@
 											</div>
 
 										</article>
-										<article>
+										<article id="factory">
 											<h4>Multiple robotics arm planning for object moving
 												<a href="http://dualmanipulation.bitbucket.org/" target="_blank" class="icon fa-bitbucket">
 													<span class="label">Code repo</span>
 												</a>
 											</h4>
-											<div class="short" data-id="6">
-												<a href="javascript:void(0);" data-id="6" class="image openpost">
+											<div class="short" data-id="factory">
+												<a href="javascript:void(0);" data-id="factory" class="image openpost">
 													<img src="images/kuka.png" alt="" /> More +
 												</a>
 												<div class="inner">
@@ -243,8 +287,8 @@
 												</p>
 												</div>
 											</div>
-											<div class="full" data-id="6">
-												<a href="javascript:void(0);" data-id="6" class="image backtoblog">
+											<div class="full" data-id="factory">
+												<a href="javascript:void(0);" data-id="factory" class="image backtoblog">
 													<img src="images/kuka.png" alt=""></img>Less -
 												</a>
 												<p>Moving objects with autonomous robots is a wide topic that includes single-arm pick-and-place tasks,
@@ -264,15 +308,14 @@
 											<br>
 											<a class="show-modal" videoId="vq10SvHYzsk" "https://www.youtube.com/watch?v=vq10SvHYzsk">Show video with arms and mobile robots</a>
 										</article>
-
-										<article>
+										<article id="humanoid">
 											<h4>Footstep planning for Humanoid Robots
 												<a href="https://github.com/CentroEPiaggio/footstep_planner" target="_blank" class="icon fa-github">
 													<span class="label">Code repo</span>
 												</a>
 										  </h4>
-											<div class="short" data-id="3">
-												<a href="javascript:void(0);" data-id="3" class="image openpost">
+											<div class="short" data-id="humanoid">
+												<a href="javascript:void(0);" data-id="humanoid" class="image openpost">
 													<img src="images/walkmancorridor.png" alt=""></img> More +
 												</a>
 												<div class="inner">
@@ -280,8 +323,8 @@
 													</p>
 												</div>
 											</div>
-											<div class="full" data-id="3">
-												<a href="javascript:void(0);" data-id="3" class="image backtoblog">
+											<div class="full" data-id="humanoid">
+												<a href="javascript:void(0);" data-id="humanoid" class="image backtoblog">
 													<img src="images/walkmancorridor.png" alt=""></img> Less -
 												</a>
 												<p>I developed an online planner that computes the necessary steps to be followed by a humanoid robot,
@@ -294,10 +337,10 @@
 												</p>
 											</div>
 										</article>
-										<article>
+										<article id="reactive">
 											<h4>Autonomous exploration with reactive behaviors</h4>
-											<div class="short" data-id="4">
-												<a href="javascript:void(0);" data-id="4" class="image openpost">
+											<div class="short" data-id="reactive">
+												<a href="javascript:void(0);" data-id="reactive" class="image openpost">
 													<img src="images/pioneer.jpg" alt=""></img> More +
 												</a>
 												<div class="inner">
@@ -306,8 +349,8 @@
 												</p>
 												</div>
 											</div>
-											<div class="full" data-id="4">
-												<a href="javascript:void(0);" data-id="4" class="image backtoblog">
+											<div class="full" data-id="reactive">
+												<a href="javascript:void(0);" data-id="reactive" class="image backtoblog">
 													<img src="images/pioneer.jpg" alt=""></img>Less -
 												</a>
 												<p>
@@ -322,7 +365,6 @@
 											<a class="show-modal" videoId="57TKmCoCYWc" "https://www.youtube.com/watch?v=57TKmCoCYWc" >Show indoor video</a>
 										</article>
 										<!-- End Article -->
-
 									</div>
 								</div>
 							</section>
